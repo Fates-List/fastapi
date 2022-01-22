@@ -1,0 +1,2169 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <meta name="generator" content="sphinx-4.2.0, furo 2021.11.23"/><title>Index - fastapi 0.72.0 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">fastapi 0.72.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">fastapi 0.72.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#J"><strong>J</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#Q"><strong>Q</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#W"><strong>W</strong></a> | <a href="#X"><strong>X</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.add_api_route">add_api_route() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.add_api_route">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.add_api_websocket_route">add_api_websocket_route() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.add_api_websocket_route">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.add_non_field_param_to_dependency">add_non_field_param_to_dependency() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.add_param_to_fields">add_param_to_fields() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.additionalProperties">additionalProperties (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.alias">alias (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.alias">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.alias">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.alias">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.alias">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.alias">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.alias">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.alias">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.alias_priority">alias_priority (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.alias_priority">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.alias_priority">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.alias_priority">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.alias_priority">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.alias_priority">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.alias_priority">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.alias_priority">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.allOf">allOf (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.allow_mutation">allow_mutation (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.allow_mutation">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.allow_mutation">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.allow_mutation">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.allow_mutation">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.allow_mutation">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.allow_mutation">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.allow_mutation">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.allowReserved">allowReserved (fastapi.openapi.models.Encoding attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.allowReserved">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.anyOf">anyOf (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.api_route">api_route() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.api_route">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKey">APIKey (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecuritySchemeType.apiKey">apiKey (fastapi.openapi.models.SecuritySchemeType attribute)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.api_key.APIKeyBase">APIKeyBase (class in fastapi.security.api_key)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.api_key.APIKeyCookie">APIKeyCookie (class in fastapi.security.api_key)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.api_key.APIKeyHeader">APIKeyHeader (class in fastapi.security.api_key)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKeyIn">APIKeyIn (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.api_key.APIKeyQuery">APIKeyQuery (class in fastapi.security.api_key)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.APIRoute">APIRoute (class in fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.APIRouter">APIRouter (class in fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.APIWebSocketRoute">APIWebSocketRoute (class in fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.attribute">attribute (fastapi.openapi.models.XML attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.authorizationCode">authorizationCode (fastapi.openapi.models.OAuthFlows attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowAuthorizationCode.authorizationUrl">authorizationUrl (fastapi.openapi.models.OAuthFlowAuthorizationCode attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowImplicit.authorizationUrl">(fastapi.openapi.models.OAuthFlowImplicit attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.HTTPBearer.bearerFormat">bearerFormat (fastapi.openapi.models.HTTPBearer attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Body">Body (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.param_functions.Body">Body() (in module fastapi.param_functions)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.callbacks">callbacks (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.callbacks">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.check_file_field">check_file_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.clientCredentials">clientCredentials (fastapi.openapi.models.OAuthFlows attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components">Components (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.components">components (fastapi.openapi.models.OpenAPI attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.Config">Components.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.const">const (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.const">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.const">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.const">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.const">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.const">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.const">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.const">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact">Contact (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.contact">contact (fastapi.openapi.models.Info attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact.Config">Contact.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.content">content (fastapi.openapi.models.ParameterBase attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody.content">(fastapi.openapi.models.RequestBody attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.content">(fastapi.openapi.models.Response attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.contentType">contentType (fastapi.openapi.models.Encoding attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.concurrency.contextmanager_in_threadpool">contextmanager_in_threadpool() (in module fastapi.concurrency)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Cookie">Cookie (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKeyIn.cookie">cookie (fastapi.openapi.models.APIKeyIn attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterInType.cookie">(fastapi.openapi.models.ParameterInType attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.ParamTypes.cookie">(fastapi.params.ParamTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.param_functions.Cookie">Cookie() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.create_cloned_field">create_cloned_field() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.create_response_field">create_response_field() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPAuthorizationCredentials.credentials">credentials (fastapi.security.http.HTTPAuthorizationCredentials attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.utils.deep_dict_update">deep_dict_update() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.default">default (fastapi.openapi.models.Schema attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable.default">(fastapi.openapi.models.ServerVariable attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Body.default">(fastapi.params.Body attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Cookie.default">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.default">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.default">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.default">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.default">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.default">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.default">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.datastructures.Default">Default() (in module fastapi.datastructures)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.default_factory">default_factory (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.default_factory">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.default_factory">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.default_factory">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.default_factory">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.default_factory">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.default_factory">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.default_factory">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.datastructures.DefaultPlaceholder">DefaultPlaceholder (class in fastapi.datastructures)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.delete">delete (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.delete">delete() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.delete">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.models.Dependant">Dependant (class in fastapi.dependencies.models)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Depends">Depends (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.param_functions.Depends">Depends() (in module fastapi.param_functions)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.deprecated">deprecated (fastapi.openapi.models.Operation attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.deprecated">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.deprecated">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.description">description (fastapi.openapi.models.Example attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ExternalDocumentation.description">(fastapi.openapi.models.ExternalDocumentation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.description">(fastapi.openapi.models.Info attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.description">(fastapi.openapi.models.Link attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.description">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.description">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.description">(fastapi.openapi.models.PathItem attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody.description">(fastapi.openapi.models.RequestBody attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.description">(fastapi.openapi.models.Response attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.description">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecurityBase.description">(fastapi.openapi.models.SecurityBase attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server.description">(fastapi.openapi.models.Server attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable.description">(fastapi.openapi.models.ServerVariable attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag.description">(fastapi.openapi.models.Tag attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Body.description">(fastapi.params.Body attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Cookie.description">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.description">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.description">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.description">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.description">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.description">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.description">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Discriminator">Discriminator (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.discriminator">discriminator (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact.email">email (fastapi.openapi.models.Contact attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.EmailStr">EmailStr (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding">Encoding (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.encoding">encoding (fastapi.openapi.models.MediaType attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.Config">Encoding.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.enum">enum (fastapi.openapi.models.Schema attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable.enum">(fastapi.openapi.models.ServerVariable attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example">Example (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.example">example (fastapi.openapi.models.MediaType attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.example">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.example">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.Config">Example.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.examples">examples (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.examples">(fastapi.openapi.models.MediaType attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.examples">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.exclude">exclude (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.exclude">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.exclude">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.exclude">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.exclude">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.exclude">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.exclude">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.exclude">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.exclusiveMaximum">exclusiveMaximum (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.exclusiveMinimum">exclusiveMinimum (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.explode">explode (fastapi.openapi.models.Encoding attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.explode">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.externalDocs">externalDocs (fastapi.openapi.models.OpenAPI attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.externalDocs">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.externalDocs">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag.externalDocs">(fastapi.openapi.models.Tag attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ExternalDocumentation">ExternalDocumentation (class in fastapi.openapi.models)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ExternalDocumentation.Config">ExternalDocumentation.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.externalValue">externalValue (fastapi.openapi.models.Example attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.Config.extra">extra (fastapi.openapi.models.Components.Config attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact.Config.extra">(fastapi.openapi.models.Contact.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.Config.extra">(fastapi.openapi.models.Encoding.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.Config.extra">(fastapi.openapi.models.Example.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ExternalDocumentation.Config.extra">(fastapi.openapi.models.ExternalDocumentation.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.Config.extra">(fastapi.openapi.models.Info.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.License.Config.extra">(fastapi.openapi.models.License.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.Config.extra">(fastapi.openapi.models.Link.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.Config.extra">(fastapi.openapi.models.MediaType.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlow.Config.extra">(fastapi.openapi.models.OAuthFlow.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.Config.extra">(fastapi.openapi.models.OAuthFlows.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.Config.extra">(fastapi.openapi.models.OpenAPI.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.Config.extra">(fastapi.openapi.models.Operation.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.Config.extra">(fastapi.openapi.models.ParameterBase.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.Config.extra">(fastapi.openapi.models.PathItem.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody.Config.extra">(fastapi.openapi.models.RequestBody.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.Config.extra">(fastapi.openapi.models.Response.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.Config.extra">(fastapi.openapi.models.Schema.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecurityBase.Config.extra">(fastapi.openapi.models.SecurityBase.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server.Config.extra">(fastapi.openapi.models.Server.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable.Config.extra">(fastapi.openapi.models.ServerVariable.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag.Config.extra">(fastapi.openapi.models.Tag.Config attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.Config.extra">(fastapi.openapi.models.XML.Config attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Body.extra">(fastapi.params.Body attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Cookie.extra">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.extra">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.extra">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.extra">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.extra">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.extra">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.extra">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    fastapi
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi">module</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI">FastAPI (class in fastapi.applications)</a>
+</li>
+        <li>
+    fastapi.applications
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.applications">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.background
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.background">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.concurrency
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.concurrency">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.datastructures
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.datastructures">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.dependencies
+
+        <ul>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.dependencies.models
+
+        <ul>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies.models">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.dependencies.utils
+
+        <ul>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.encoders
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.encoders">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.exception_handlers
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.exception_handlers">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.exceptions
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.exceptions">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.logger
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.logger">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware.cors
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.cors">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware.gzip
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.gzip">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware.httpsredirect
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.httpsredirect">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware.trustedhost
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.trustedhost">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.middleware.wsgi
+
+        <ul>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.wsgi">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.openapi
+
+        <ul>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.openapi.constants
+
+        <ul>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.constants">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.openapi.docs
+
+        <ul>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.docs">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.openapi.models
+
+        <ul>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.models">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    fastapi.openapi.utils
+
+        <ul>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.param_functions
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.param_functions">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.params
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.params">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.requests
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.requests">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.responses
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.responses">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.routing
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.routing">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.api_key
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.api_key">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.base
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.base">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.http
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.http">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.oauth2
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.oauth2">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.open_id_connect_url
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.open_id_connect_url">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.security.utils
+
+        <ul>
+          <li><a href="fastapi.security.html#module-fastapi.security.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.staticfiles
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.staticfiles">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.templating
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.templating">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.testclient
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.testclient">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.types
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.types">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.utils
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    fastapi.websockets
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi.websockets">module</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.exceptions.FastAPIError">FastAPIError</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.File">File (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.param_functions.File">File() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuth2.flows">flows (fastapi.openapi.models.OAuth2 attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Form">Form (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.param_functions.Form">Form() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.format">format (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Body.ge">ge (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.ge">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.ge">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.ge">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.ge">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.ge">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.ge">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.ge">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.encoders.generate_encoders_by_class_tuples">generate_encoders_by_class_tuples() (in module fastapi.encoders)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.generate_operation_id">generate_operation_id() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.generate_operation_id_for_path">generate_operation_id_for_path() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.generate_operation_summary">generate_operation_summary() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.get">get (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.get">get() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.get">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.security.html#fastapi.security.utils.get_authorization_scheme_param">get_authorization_scheme_param() (in module fastapi.security.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_body_field">get_body_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_dependant">get_dependant() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_flat_dependant">get_flat_dependant() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_flat_models_from_routes">get_flat_models_from_routes() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_flat_params">get_flat_params() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_missing_field_error">get_missing_field_error() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.get_model_definitions">get_model_definitions() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi">get_openapi() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi_operation_metadata">get_openapi_operation_metadata() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi_operation_parameters">get_openapi_operation_parameters() (in module fastapi.openapi.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi_operation_request_body">get_openapi_operation_request_body() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi_path">get_openapi_path() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.utils.get_openapi_security_definitions">get_openapi_security_definitions() (in module fastapi.openapi.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_param_field">get_param_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_param_sub_dependant">get_param_sub_dependant() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_parameterless_sub_dependant">get_parameterless_sub_dependant() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.get_path_param_names">get_path_param_names() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.docs.get_redoc_html">get_redoc_html() (in module fastapi.openapi.docs)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.get_request_handler">get_request_handler() (in module fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.APIRoute.get_route_handler">get_route_handler() (fastapi.routing.APIRoute method)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_schema_compatible_field">get_schema_compatible_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_sub_dependant">get_sub_dependant() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.docs.get_swagger_ui_html">get_swagger_ui_html() (in module fastapi.openapi.docs)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.docs.get_swagger_ui_oauth2_redirect_html">get_swagger_ui_oauth2_redirect_html() (in module fastapi.openapi.docs)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_typed_annotation">get_typed_annotation() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.get_typed_signature">get_typed_signature() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.utils.get_value_or_default">get_value_or_default() (in module fastapi.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.get_websocket_app">get_websocket_app() (in module fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.gt">gt (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.gt">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.gt">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.gt">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.gt">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.gt">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.gt">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.gt">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="H" class="genindex-section">
+  <h2>H</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.head">head (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.head">head() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.head">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Header">Header (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Header">(class in fastapi.params)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKeyIn.header">header (fastapi.openapi.models.APIKeyIn attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterInType.header">(fastapi.openapi.models.ParameterInType attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.ParamTypes.header">(fastapi.params.ParamTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.param_functions.Header">Header() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.headers">headers (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.headers">(fastapi.openapi.models.Encoding attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.headers">(fastapi.openapi.models.Response attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecuritySchemeType.http">http (fastapi.openapi.models.SecuritySchemeType attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.exception_handlers.http_exception_handler">http_exception_handler() (in module fastapi.exception_handlers)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPAuthorizationCredentials">HTTPAuthorizationCredentials (class in fastapi.security.http)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.HTTPBase">HTTPBase (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.http.HTTPBase">(class in fastapi.security.http)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPBasic">HTTPBasic (class in fastapi.security.http)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPBasicCredentials">HTTPBasicCredentials (class in fastapi.security.http)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.HTTPBearer">HTTPBearer (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.http.HTTPBearer">(class in fastapi.security.http)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPDigest">HTTPDigest (class in fastapi.security.http)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.exceptions.HTTPException">HTTPException</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.implicit">implicit (fastapi.openapi.models.OAuthFlows attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKey.in_">in_ (fastapi.openapi.models.APIKey attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Parameter.in_">(fastapi.openapi.models.Parameter attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Cookie.in_">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.in_">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.in_">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.in_">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.in_">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.include">include (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.include">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.include">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.include">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.include">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.include">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.include">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.include">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.include_router">include_router() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.include_router">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info">Info (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.info">info (fastapi.openapi.models.OpenAPI attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.Config">Info.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.is_async_gen_callable">is_async_gen_callable() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.is_coroutine_callable">is_coroutine_callable() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.is_gen_callable">is_gen_callable() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.is_scalar_field">is_scalar_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.is_scalar_sequence_field">is_scalar_sequence_field() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.items">items (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="J" class="genindex-section">
+  <h2>J</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.encoders.jsonable_encoder">jsonable_encoder() (in module fastapi.encoders)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Body.le">le (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.le">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.le">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.le">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.le">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.le">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.le">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.le">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.License">License (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.license">license (fastapi.openapi.models.Info attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.License.Config">License.Config (class in fastapi.openapi.models)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link">Link (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.Config">Link.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.links">links (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.links">(fastapi.openapi.models.Response attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.lt">lt (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.lt">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.lt">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.lt">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.lt">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.lt">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.lt">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.lt">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Discriminator.mapping">mapping (fastapi.openapi.models.Discriminator attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.max_items">max_items (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.max_items">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.max_items">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.max_items">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.max_items">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.max_items">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.max_items">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.max_items">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.max_length">max_length (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.max_length">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.max_length">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.max_length">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.max_length">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.max_length">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.max_length">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.max_length">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.maximum">maximum (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.maxItems">maxItems (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.maxLength">maxLength (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.maxProperties">maxProperties (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.responses.ORJSONResponse.media_type">media_type (fastapi.responses.ORJSONResponse attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType">MediaType (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.Config">MediaType.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.min_items">min_items (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.min_items">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.min_items">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.min_items">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.min_items">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.min_items">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.min_items">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.min_items">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.min_length">min_length (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.min_length">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.min_length">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.min_length">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.min_length">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.min_length">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.min_length">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.min_length">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.minimum">minimum (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.minItems">minItems (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.minLength">minLength (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.minProperties">minProperties (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.exceptions.RequestValidationError.model">model (fastapi.exceptions.RequestValidationError attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.exceptions.WebSocketRequestValidationError.model">(fastapi.exceptions.WebSocketRequestValidationError attribute)</a>
+</li>
+          <li><a href="fastapi.security.html#fastapi.security.base.SecurityBase.model">(fastapi.security.base.SecurityBase attribute)</a>
+</li>
+        </ul></li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="fastapi.html#module-fastapi">fastapi</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.applications">fastapi.applications</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.background">fastapi.background</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.concurrency">fastapi.concurrency</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.datastructures">fastapi.datastructures</a>
+</li>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies">fastapi.dependencies</a>
+</li>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies.models">fastapi.dependencies.models</a>
+</li>
+          <li><a href="fastapi.dependencies.html#module-fastapi.dependencies.utils">fastapi.dependencies.utils</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.encoders">fastapi.encoders</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.exception_handlers">fastapi.exception_handlers</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.exceptions">fastapi.exceptions</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.logger">fastapi.logger</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware">fastapi.middleware</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.cors">fastapi.middleware.cors</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.gzip">fastapi.middleware.gzip</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.httpsredirect">fastapi.middleware.httpsredirect</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.trustedhost">fastapi.middleware.trustedhost</a>
+</li>
+          <li><a href="fastapi.middleware.html#module-fastapi.middleware.wsgi">fastapi.middleware.wsgi</a>
+</li>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi">fastapi.openapi</a>
+</li>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.constants">fastapi.openapi.constants</a>
+</li>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.docs">fastapi.openapi.docs</a>
+</li>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.models">fastapi.openapi.models</a>
+</li>
+          <li><a href="fastapi.openapi.html#module-fastapi.openapi.utils">fastapi.openapi.utils</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.param_functions">fastapi.param_functions</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.params">fastapi.params</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.requests">fastapi.requests</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.responses">fastapi.responses</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.routing">fastapi.routing</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security">fastapi.security</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.api_key">fastapi.security.api_key</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.base">fastapi.security.base</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.http">fastapi.security.http</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.oauth2">fastapi.security.oauth2</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.open_id_connect_url">fastapi.security.open_id_connect_url</a>
+</li>
+          <li><a href="fastapi.security.html#module-fastapi.security.utils">fastapi.security.utils</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.staticfiles">fastapi.staticfiles</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.templating">fastapi.templating</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.testclient">fastapi.testclient</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.types">fastapi.types</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.utils">fastapi.utils</a>
+</li>
+          <li><a href="fastapi.html#module-fastapi.websockets">fastapi.websockets</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Body.multiple_of">multiple_of (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.multiple_of">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.multiple_of">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.multiple_of">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.multiple_of">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.multiple_of">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.multiple_of">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.multiple_of">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.multipleOf">multipleOf (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKey.name">name (fastapi.openapi.models.APIKey attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact.name">(fastapi.openapi.models.Contact attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.License.name">(fastapi.openapi.models.License attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Parameter.name">(fastapi.openapi.models.Parameter attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag.name">(fastapi.openapi.models.Tag attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.name">(fastapi.openapi.models.XML attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.namespace">namespace (fastapi.openapi.models.XML attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.not_">not_ (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.nullable">nullable (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="O" class="genindex-section">
+  <h2>O</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuth2">OAuth2 (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.oauth2.OAuth2">(class in fastapi.security.oauth2)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecuritySchemeType.oauth2">oauth2 (fastapi.openapi.models.SecuritySchemeType attribute)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.oauth2.OAuth2AuthorizationCodeBearer">OAuth2AuthorizationCodeBearer (class in fastapi.security.oauth2)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.oauth2.OAuth2PasswordBearer">OAuth2PasswordBearer (class in fastapi.security.oauth2)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.oauth2.OAuth2PasswordRequestForm">OAuth2PasswordRequestForm (class in fastapi.security.oauth2)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.oauth2.OAuth2PasswordRequestFormStrict">OAuth2PasswordRequestFormStrict (class in fastapi.security.oauth2)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlow">OAuthFlow (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlow.Config">OAuthFlow.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowAuthorizationCode">OAuthFlowAuthorizationCode (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowClientCredentials">OAuthFlowClientCredentials (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowImplicit">OAuthFlowImplicit (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowPassword">OAuthFlowPassword (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows">OAuthFlows (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.Config">OAuthFlows.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.oneOf">oneOf (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI">OpenAPI (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.openapi">openapi (fastapi.openapi.models.OpenAPI attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.openapi">openapi() (fastapi.applications.FastAPI method)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.Config">OpenAPI.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenIdConnect">OpenIdConnect (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.open_id_connect_url.OpenIdConnect">(class in fastapi.security.open_id_connect_url)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecuritySchemeType.openIdConnect">openIdConnect (fastapi.openapi.models.SecuritySchemeType attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenIdConnect.openIdConnectUrl">openIdConnectUrl (fastapi.openapi.models.OpenIdConnect attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation">Operation (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.Config">Operation.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.operationId">operationId (fastapi.openapi.models.Link attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.operationId">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.operationRef">operationRef (fastapi.openapi.models.Link attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.options">options (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.options">options() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.options">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.responses.ORJSONResponse">ORJSONResponse (class in fastapi.responses)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Param">Param (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Parameter">Parameter (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase">ParameterBase (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.Config">ParameterBase.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterInType">ParameterInType (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.parameters">parameters (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.parameters">(fastapi.openapi.models.Link attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.parameters">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.parameters">(fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.ParamTypes">ParamTypes (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlows.password">password (fastapi.openapi.models.OAuthFlows attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.http.HTTPBasicCredentials.password">(fastapi.security.http.HTTPBasicCredentials attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.patch">patch (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.patch">patch() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.patch">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Path">Path (class in fastapi.params)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterInType.path">path (fastapi.openapi.models.ParameterInType attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.ParamTypes.path">(fastapi.params.ParamTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.param_functions.Path">Path() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem">PathItem (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.Config">PathItem.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.paths">paths (fastapi.openapi.models.OpenAPI attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.pattern">pattern (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.post">post (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.post">post() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.post">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.prefix">prefix (fastapi.openapi.models.XML attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.properties">properties (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Discriminator.propertyName">propertyName (fastapi.openapi.models.Discriminator attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.put">put (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.put">put() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.put">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Q" class="genindex-section">
+  <h2>Q</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.params.Query">Query (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.APIKeyIn.query">query (fastapi.openapi.models.APIKeyIn attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterInType.query">(fastapi.openapi.models.ParameterInType attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.ParamTypes.query">(fastapi.params.ParamTypes attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.param_functions.Query">Query() (in module fastapi.param_functions)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.exceptions.RequestValidationError.raw_errors">raw_errors (fastapi.exceptions.RequestValidationError attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.exceptions.WebSocketRequestValidationError.raw_errors">(fastapi.exceptions.WebSocketRequestValidationError attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.readOnly">readOnly (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.ref">ref (fastapi.openapi.models.PathItem attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Reference.ref">(fastapi.openapi.models.Reference attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.ref">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Reference">Reference (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlow.refreshUrl">refreshUrl (fastapi.openapi.models.OAuthFlow attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Body.regex">regex (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.regex">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.regex">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.regex">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.regex">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.regex">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.regex">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.regex">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.responses.ORJSONResponse.render">render() (fastapi.responses.ORJSONResponse method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.responses.UJSONResponse.render">(fastapi.responses.UJSONResponse method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.params.Body.repr">repr (fastapi.params.Body attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.params.Cookie.repr">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.repr">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.repr">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.repr">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.repr">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.repr">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.repr">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.request_body_to_args">request_body_to_args() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.request_params_to_args">request_params_to_args() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.exception_handlers.request_validation_exception_handler">request_validation_exception_handler() (in module fastapi.exception_handlers)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.requestBodies">requestBodies (fastapi.openapi.models.Components attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody">RequestBody (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.requestBody">requestBody (fastapi.openapi.models.Link attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.requestBody">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody.Config">RequestBody.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.exceptions.RequestValidationError">RequestValidationError</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.required">required (fastapi.openapi.models.ParameterBase attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.RequestBody.required">(fastapi.openapi.models.RequestBody attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.required">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response">Response (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Response.Config">Response.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.responses">responses (fastapi.openapi.models.Components attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.responses">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.routing.run_endpoint_function">run_endpoint_function() (in module fastapi.routing)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema">Schema (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.Config">Schema.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.MediaType.schema_">schema_ (fastapi.openapi.models.MediaType attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.schema_">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.schemas">schemas (fastapi.openapi.models.Components attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.HTTPBase.scheme">scheme (fastapi.openapi.models.HTTPBase attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.http.HTTPAuthorizationCredentials.scheme">(fastapi.security.http.HTTPAuthorizationCredentials attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.security.html#fastapi.security.base.SecurityBase.scheme_name">scheme_name (fastapi.security.base.SecurityBase attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlow.scopes">scopes (fastapi.openapi.models.OAuthFlow attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.params.Security">Security (class in fastapi.params)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.security">security (fastapi.openapi.models.OpenAPI attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.security">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.html#fastapi.param_functions.Security">Security() (in module fastapi.param_functions)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecurityBase">SecurityBase (class in fastapi.openapi.models)</a>
+
+        <ul>
+          <li><a href="fastapi.security.html#fastapi.security.base.SecurityBase">(class in fastapi.security.base)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecurityBase.Config">SecurityBase.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.models.SecurityRequirement">SecurityRequirement (class in fastapi.dependencies.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Components.securitySchemes">securitySchemes (fastapi.openapi.models.Components attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecuritySchemeType">SecuritySchemeType (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.security.html#fastapi.security.oauth2.SecurityScopes">SecurityScopes (class in fastapi.security.oauth2)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.routing.serialize_response">serialize_response() (in module fastapi.routing)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server">Server (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Link.server">server (fastapi.openapi.models.Link attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server.Config">Server.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.servers">servers (fastapi.openapi.models.OpenAPI attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.servers">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.servers">(fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable">ServerVariable (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.ServerVariable.Config">ServerVariable.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.setup">setup() (fastapi.applications.FastAPI method)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.solve_dependencies">solve_dependencies() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.dependencies.html#fastapi.dependencies.utils.solve_generator">solve_generator() (in module fastapi.dependencies.utils)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Encoding.style">style (fastapi.openapi.models.Encoding attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ParameterBase.style">(fastapi.openapi.models.ParameterBase attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.summary">summary (fastapi.openapi.models.Example attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.summary">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.summary">(fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag">Tag (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Tag.Config">Tag.Config (class in fastapi.openapi.models)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OpenAPI.tags">tags (fastapi.openapi.models.OpenAPI attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Operation.tags">(fastapi.openapi.models.Operation attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.termsOfService">termsOfService (fastapi.openapi.models.Info attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.title">title (fastapi.openapi.models.Info attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.title">(fastapi.openapi.models.Schema attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Body.title">(fastapi.params.Body attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Cookie.title">(fastapi.params.Cookie attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.File.title">(fastapi.params.File attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Form.title">(fastapi.params.Form attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Header.title">(fastapi.params.Header attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Param.title">(fastapi.params.Param attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Path.title">(fastapi.params.Path attribute)</a>
+</li>
+          <li><a href="fastapi.html#fastapi.params.Query.title">(fastapi.params.Query attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowAuthorizationCode.tokenUrl">tokenUrl (fastapi.openapi.models.OAuthFlowAuthorizationCode attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowClientCredentials.tokenUrl">(fastapi.openapi.models.OAuthFlowClientCredentials attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.OAuthFlowPassword.tokenUrl">(fastapi.openapi.models.OAuthFlowPassword attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.PathItem.trace">trace (fastapi.openapi.models.PathItem attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.trace">trace() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.trace">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.type">type (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.SecurityBase.type_">type_ (fastapi.openapi.models.SecurityBase attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.responses.UJSONResponse">UJSONResponse (class in fastapi.responses)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.uniqueItems">uniqueItems (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.html#fastapi.datastructures.UploadFile">UploadFile (class in fastapi.datastructures)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Contact.url">url (fastapi.openapi.models.Contact attribute)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.ExternalDocumentation.url">(fastapi.openapi.models.ExternalDocumentation attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.License.url">(fastapi.openapi.models.License attribute)</a>
+</li>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server.url">(fastapi.openapi.models.Server attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.security.html#fastapi.security.http.HTTPBasicCredentials.username">username (fastapi.security.http.HTTPBasicCredentials attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="V" class="genindex-section">
+  <h2>V</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.datastructures.UploadFile.validate">validate() (fastapi.datastructures.UploadFile class method)</a>
+
+        <ul>
+          <li><a href="fastapi.openapi.html#fastapi.openapi.models.EmailStr.validate">(fastapi.openapi.models.EmailStr class method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Example.value">value (fastapi.openapi.models.Example attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Server.variables">variables (fastapi.openapi.models.Server attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Info.version">version (fastapi.openapi.models.Info attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="W" class="genindex-section">
+  <h2>W</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.applications.FastAPI.websocket">websocket() (fastapi.applications.FastAPI method)</a>
+
+        <ul>
+          <li><a href="fastapi.html#fastapi.routing.APIRouter.websocket">(fastapi.routing.APIRouter method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.html#fastapi.exceptions.WebSocketRequestValidationError">WebSocketRequestValidationError</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.wrapped">wrapped (fastapi.openapi.models.XML attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.writeOnly">writeOnly (fastapi.openapi.models.Schema attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="X" class="genindex-section">
+  <h2>X</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML">XML (class in fastapi.openapi.models)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.Schema.xml">xml (fastapi.openapi.models.Schema attribute)</a>
+</li>
+        <li><a href="fastapi.openapi.html#fastapi.openapi.models.XML.Config">XML.Config (class in fastapi.openapi.models)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2022, Tiangolo |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>
